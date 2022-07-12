@@ -1,7 +1,7 @@
 {
-	"publisher":"rfx Tech.",
+	"publisher":"rfxTech",
   	"name": "rfx-focf",
-	"displayName": "FolderOfCurrentFile",
+	"displayName": "Folder Explorer - FolderOfCurrentFile",
 	"description": "Sidebar to quickly give access to files within same directly (like notepad++ explorer plugin)",
 	"version": "0.1.0",
 
