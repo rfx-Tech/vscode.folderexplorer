@@ -4,6 +4,12 @@
 	"displayName": "FolderOfCurrentFile",
 	"description": "Sidebar to quickly give access to files within same directly (like notepad++ explorer plugin)",
 	"version": "0.1.0",
+
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rfx-Tech/vscode.folderexplorer.git"
+	  },
+
 	"engines": {
 		"vscode": "^1.69.0"
 	},
