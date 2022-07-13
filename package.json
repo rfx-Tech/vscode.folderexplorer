@@ -3,8 +3,9 @@
   	"name": "rfx-focf",
 	"displayName": "Folder Explorer - FolderOfCurrentFile",
 	"description": "Sidebar to quickly give access to files within same directly (like notepad++ explorer plugin)",
-	"version": "0.1.0",
-
+	"version": "0.2.0",
+	"icon": "images/focf.png",
+	
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/rfx-Tech/vscode.folderexplorer.git"
@@ -18,14 +19,45 @@
 	],
 	"activationEvents": [
         "onCommand:rfx-focf.FolderOfCurrentFile",
+        "onCommand:rfx-focf.QuickPickFile",
 		"onView:rfx.folderExplorer"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
+		"configuration":[
+			{
+				"title": "QuickPickFile Directories",
+				"properties": {
+					"quickpickfile.dirs":{
+						"type":["array","null"],
+						"default":null,
+						"description":"A list of all directories which shall be used for QuickPickFile (recursive searched)"
+					},
+					"quickpickfile.ignoredirs":{
+						"type":["array","null"],
+						"default":null,
+						"description":"A list of patterns, if directory contains patterns skip/ignore it for QuickPickFile"
+					},
+					"quickpickfile.ignorefileexts":{
+						"type":["array","null"],
+						"default":null,
+						"description":"A list of file extensions which shall be ignored for QuickPickFile (with dots and case sensitive [by intention])"
+					}
+				}
+			}
+		],
 		"commands": [
 			{
 				"command": "rfx-focf.FolderOfCurrentFile",
 				"title": "FolderOfCurrentFile"
+			},
+			{
+				"command": "rfx-focf.QuickPickFile",
+				"title": "QuickPickFile"
+			},
+			{
+				"command": "rfx-focf.QuickPickFile.Refresh",
+				"title": "QuickPickFileRefresh"
 			},
 			{
 				"command": "rfx-focf.dirup",
