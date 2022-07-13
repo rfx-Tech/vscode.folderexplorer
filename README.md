@@ -54,7 +54,11 @@ No settings, yet.
 none
 ## Release Notes
 
+for more see [CHANGELOG.md](CHANGELOG.md)
+### 0.2.0
+
+QuickPickFile release
 ### 0.1.0
 
-Initial release
+Initial release : Folder Explorer
 

@@ -5,6 +5,8 @@ All notable changes to the "Folder Explorer" extension will be documented in thi
 The versioning follows: [Semantic Versioning](https://semver.org/)
 MAJOR.MINOR.PATCH.
 
+see [README.md](README.md) for introduction.
+
 ## [Unreleased]
 
 ## [0.2.0]
